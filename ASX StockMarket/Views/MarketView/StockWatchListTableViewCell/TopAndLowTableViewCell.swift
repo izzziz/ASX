@@ -37,9 +37,9 @@ class TopAndLowTableViewCell: UITableViewCell {
         guard self.tnl != nil else {
             return
         }
-  //      let update = tnl?.finance.result.first?.quotes
-        self.descriptionLabel.text = tnl?.finance.result.first?.description
-   //     self.title.text = tnl?.finance.result.first?.title
+//        let update = tnl?.finance.result.first?.quotes
+//        self.descriptionLabel.text = tnl?.finance.result.first?.description
+//        self.title.text = tnl?.finance.result.first?.title
 //        self.fullEchName.text = update?.first?.fullExchangeName
 //        self.symbol.text = update?.first?.symbol
     }

@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+class TopAndLowViewModel {
+    
+    // MARK:- Propeties
+    // MARK: -
+    
+   // var stockList: StocksWatchList?
+    var topAndLowList: TopAndLowViewController?
+    
+    // MARK: - Newtork Calls
+    // MARK: -
+    
+   
+}

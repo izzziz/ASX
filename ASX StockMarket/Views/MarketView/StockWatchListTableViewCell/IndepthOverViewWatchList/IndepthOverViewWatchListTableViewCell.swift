@@ -14,9 +14,9 @@ class IndepthOverViewWatchListTableViewCell: UITableViewCell {
     @IBOutlet weak var currentChangeLabel: UILabel!
     
     
-    var results: Rest? = nil {
+    var topNLOw: TopAndLowStocks? = nil {
         didSet {
-            self.configureCell()
+            self.configureCellForTopNLow()
         }
     }
     
@@ -30,16 +30,13 @@ class IndepthOverViewWatchListTableViewCell: UITableViewCell {
         
         
     }
-    private func configureCell() {
+    private func configureCellForTopNLow() {
         
-        guard self.results != nil else  {
-            return
-        }
-     
-     //   let resSymbol =  Fin.
-    //    self.symbolsLabel.text = results?.title
-        self.currentPriceLabel.text = results?.description
-     //   self.currentChangeLabel.text = results.
+//        guard self.topNLOw != nil else  {
+//            return
+//        }
+        let quoteS = topNLOw?.finance.result.first
+      //  symbolsLabel.text = quoteS?.quotes
     }
 }
 
